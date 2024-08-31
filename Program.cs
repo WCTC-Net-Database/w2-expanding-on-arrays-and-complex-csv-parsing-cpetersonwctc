@@ -167,7 +167,7 @@ class Program
                 StreamWriter writer = new StreamWriter("input.csv", false);
                 
                 writer.WriteLine("Name,Class,Level,HP,Equipment");
-                for (int b = 1; i < lines.Length; i++)
+                for (int b = 1; b < lines.Length; b++)
                 {
                     if (b == i)
                     {
@@ -175,7 +175,7 @@ class Program
                     }
                     else
                     {
-                        string lineAgain = lines[i];
+                        string lineAgain = lines[b];
                         string lineName;
                         if (lineAgain.StartsWith("\""))
                         {
